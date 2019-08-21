@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+/* General styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:teal;
+}
+
+
+/**************** Custom styles *******************/
+
+/******** Score Board ********/
+
+.score-board {
+    margin: 20px auto;
+    text-align: center;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    background-color: wheat;
+    font-size: 46px;
+    padding: 15px 20px;
+    font-family: 'Lexend Deca', sans-serif;;
+    position: relative;
+}
+
+.players {
+    width: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    padding: 2px 10px;
+    font-family: 'Lexend Deca', sans-serif;;
+}
+
+/******** Choices *********/
+
+.choices {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.choice {
+    border: 2px solid white;
+    border-radius: 15%;
+    margin: 0 20px;
+    padding: 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+}
+
+/****** New Game Button ******/
+
+.new-game-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+#new-game-button {
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 0 auto;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Lexend Deca', sans-serif;;
+    background-color: rgb(197, 65, 56);
+}
+
+#new-game-button:hover {
+    cursor: pointer;
+}
+
+#new-game-button:active {
+    background: white;
+    color: black;
+}
+
+.win {
+    background-color: rgb(7, 221, 89);
+}
+
+.lose {
+    background-color: red;
+}
+
+.draw {
+    background-color: white;
+}

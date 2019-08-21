@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Peper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="score-board">
+        <div id="user-label" class="players">
+            <p>User</p>
+        </div>
+        <div>
+            <span id="user-score">0</span>:<span id="bot-score">0</span>
+        </div>
+        <div id="bot-label" class="players">
+            <p>Bot</p>
+        </div>
+    </div>
+
+    <div class="choices">
+       <div class="choice" id="rock">
+            <img src="images/rock.png" alt="rock">
+       </div> 
+        <div class="choice" id="paper">
+             <img src="images/paper.png" alt="hand">
+        </div> 
+        <div class="choice" id="scissors">
+             <img src="images/scissors.png" alt="scissors">
+        </div> 
+     </div>
+
+     <div class="flex-centered new-game-button-wrapper">
+        <button onclick="location.reload();" id="new-game-button">New Game</button>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+</html>
